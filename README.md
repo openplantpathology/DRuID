@@ -26,7 +26,7 @@ We expect to empower rice farmers by providing seasonal advice. If farmers know 
 
 ## Contact details: 
 
-Dr. Adam Sparks, University of Southern Queensland (USQ)
+Associate Professor Adam H. Sparks, University of Southern Queensland (USQ)
 
   - [adam.sparks@usq.edu.au](mailto::adam.sparks@usq.edu.au)
   
