@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vignette Title • DRuID</title>
+<title>DRuID • DRuID</title>
 <!-- jquery --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!-- Font Awesome icons --><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
@@ -63,8 +63,8 @@
       </header><div class="row">
   <div class="col-md-9">
     <div class="page-header toc-ignore">
-      <h1>Vignette Title</h1>
-                        <h4 class="author">Vignette Author</h4>
+      <h1>DRuID</h1>
+                        <h4 class="author">Adam H Sparks and Ricardo Oliva</h4>
             
             <h4 class="date">2017-10-20</h4>
           </div>
@@ -72,210 +72,40 @@
     
     
 <div class="contents">
-<p>Vignettes are long form documentation commonly included in packages. Because they are part of the distribution of the package, they need to be as compact as possible. The <code>html_vignette</code> output type provides a custom style sheet (and tweaks some options) to ensure that the resulting html is as small as possible. The <code>html_vignette</code> format:</p>
+<div id="druid-an-informed-decision-platform-to-reduce-the-risk-of-rice-diseases" class="section level1">
+<h1 class="hasAnchor">
+<a href="#druid-an-informed-decision-platform-to-reduce-the-risk-of-rice-diseases" class="anchor"></a>DRuID: An informed-Decision platform to reduce the risk of RIce Diseases</h1>
+<div id="description" class="section level2">
+<h2 class="hasAnchor">
+<a href="#description" class="anchor"></a>Description</h2>
+<p>In ancient times, druids were knowledge-keepers that provided members of the society with advice on health matters. In the same way, we are proposing to implement a web platform to advise decision-makers on which rice varieties should be promoted next season to keep a healthy crop. The tool will allow managing disease in real-time and to define breeding priorities for specific regions. In order to do that, the platform will integrated early-season pathogen diagnostics, modeling of weather patterns, and rice disease resistance profiles of local rice varieties. The platform can give an advice after solving three main questions:</p>
 <ul>
-<li>Never uses retina figures</li>
-<li>Has a smaller default figure size</li>
-<li>Uses a custom CSS stylesheet instead of the default Twitter Bootstrap style</li>
+<li><p>What is the predominant pathogen population on the area?</p></li>
+<li><p>Which areas have higher risk of disease?</p></li>
+<li><p>What is the resistance spectrum that is needed for that area?</p></li>
 </ul>
-<div id="vignette-info" class="section level2">
-<h2 class="hasAnchor">
-<a href="#vignette-info" class="anchor"></a>Vignette Info</h2>
-<p>Note the various macros within the <code>vignette</code> section of the metadata block above. These are required in order to instruct R how to build the vignette. Note that you should change the <code>title</code> field and the <code>\VignetteIndexEntry</code> to match the title of your vignette.</p>
+<p>We expect that the tool will allow public and private enterprises to make informed-decision on rice. To feed the DRUiD platform with field and environment data, we have developed new technologies that will be integrated for the first time. For instance, we created PathoTracer, a molecular test that can identify pathogen races directly from an infected leaf sample. We are also building a catalog of resistance factors in released varieties to determine the best fit.</p>
 </div>
-<div id="styles" class="section level2">
+<div id="the-need" class="section level2">
 <h2 class="hasAnchor">
-<a href="#styles" class="anchor"></a>Styles</h2>
-<p>The <code>html_vignette</code> template includes a basic CSS theme. To override this theme you can specify your own CSS in the document metadata as follows:</p>
-<pre><code>output: 
-  rmarkdown::html_vignette:
-    css: mystyles.css</code></pre>
+<a href="#the-need" class="anchor"></a>The need</h2>
+<p>Rice diseases, such as bacterial leaf blight, represent a serious limitation for rice production in most areas of Asia. The disease prevails in the paddy because farmers use susceptible varieties where weather conditions favor disease development. In that scenario, the risk of having an outbreak the next season is higher.</p>
 </div>
-<div id="figures" class="section level2">
+<div id="impact" class="section level2">
 <h2 class="hasAnchor">
-<a href="#figures" class="anchor"></a>Figures</h2>
-<p>The figure sizes have been customised so that you can easily put two images side-by-side.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>)
-<span class="kw">plot</span>(<span class="dv">10</span><span class="op">:</span><span class="dv">1</span>)</code></pre></div>
-<p><img src="DRuID_files/figure-html/unnamed-chunk-1-1.png" width="672"><img src="DRuID_files/figure-html/unnamed-chunk-1-2.png" width="672"></p>
-<p>You can enable figure captions by <code>fig_caption: yes</code> in YAML:</p>
-<pre><code>output:
-  rmarkdown::html_vignette:
-    fig_caption: yes</code></pre>
-<p>Then you can use the chunk option <code>fig.cap = "Your figure caption."</code> in <strong>knitr</strong>.</p>
+<a href="#impact" class="anchor"></a>Impact</h2>
+<p>We expect to empower rice farmers by providing seasonal advice. If farmers know which variety is less likely to suffer in the following season, it will reduce the risk and increases its income. Up scaling this principle can result in effective management of large rice areas or targeting breeding by national programs working in rice.</p>
 </div>
-<div id="more-examples" class="section level2">
+<div id="contact-details" class="section level2">
 <h2 class="hasAnchor">
-<a href="#more-examples" class="anchor"></a>More Examples</h2>
-<p>You can write math expressions, e.g. <span class="math inline">\(Y = X\beta + \epsilon\)</span>, footnotes<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>, and tables, e.g. using <code><a href="http://www.rdocumentation.org/packages/knitr/topics/kable">knitr::kable()</a></code>.</p>
-<table class="table">
-<thead><tr class="header">
-<th></th>
-<th align="right">mpg</th>
-<th align="right">cyl</th>
-<th align="right">disp</th>
-<th align="right">hp</th>
-<th align="right">drat</th>
-<th align="right">wt</th>
-<th align="right">qsec</th>
-<th align="right">vs</th>
-<th align="right">am</th>
-<th align="right">gear</th>
-<th align="right">carb</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td>Mazda RX4</td>
-<td align="right">21.0</td>
-<td align="right">6</td>
-<td align="right">160.0</td>
-<td align="right">110</td>
-<td align="right">3.90</td>
-<td align="right">2.620</td>
-<td align="right">16.46</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">4</td>
-<td align="right">4</td>
-</tr>
-<tr class="even">
-<td>Mazda RX4 Wag</td>
-<td align="right">21.0</td>
-<td align="right">6</td>
-<td align="right">160.0</td>
-<td align="right">110</td>
-<td align="right">3.90</td>
-<td align="right">2.875</td>
-<td align="right">17.02</td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">4</td>
-<td align="right">4</td>
-</tr>
-<tr class="odd">
-<td>Datsun 710</td>
-<td align="right">22.8</td>
-<td align="right">4</td>
-<td align="right">108.0</td>
-<td align="right">93</td>
-<td align="right">3.85</td>
-<td align="right">2.320</td>
-<td align="right">18.61</td>
-<td align="right">1</td>
-<td align="right">1</td>
-<td align="right">4</td>
-<td align="right">1</td>
-</tr>
-<tr class="even">
-<td>Hornet 4 Drive</td>
-<td align="right">21.4</td>
-<td align="right">6</td>
-<td align="right">258.0</td>
-<td align="right">110</td>
-<td align="right">3.08</td>
-<td align="right">3.215</td>
-<td align="right">19.44</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">3</td>
-<td align="right">1</td>
-</tr>
-<tr class="odd">
-<td>Hornet Sportabout</td>
-<td align="right">18.7</td>
-<td align="right">8</td>
-<td align="right">360.0</td>
-<td align="right">175</td>
-<td align="right">3.15</td>
-<td align="right">3.440</td>
-<td align="right">17.02</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">3</td>
-<td align="right">2</td>
-</tr>
-<tr class="even">
-<td>Valiant</td>
-<td align="right">18.1</td>
-<td align="right">6</td>
-<td align="right">225.0</td>
-<td align="right">105</td>
-<td align="right">2.76</td>
-<td align="right">3.460</td>
-<td align="right">20.22</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">3</td>
-<td align="right">1</td>
-</tr>
-<tr class="odd">
-<td>Duster 360</td>
-<td align="right">14.3</td>
-<td align="right">8</td>
-<td align="right">360.0</td>
-<td align="right">245</td>
-<td align="right">3.21</td>
-<td align="right">3.570</td>
-<td align="right">15.84</td>
-<td align="right">0</td>
-<td align="right">0</td>
-<td align="right">3</td>
-<td align="right">4</td>
-</tr>
-<tr class="even">
-<td>Merc 240D</td>
-<td align="right">24.4</td>
-<td align="right">4</td>
-<td align="right">146.7</td>
-<td align="right">62</td>
-<td align="right">3.69</td>
-<td align="right">3.190</td>
-<td align="right">20.00</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">4</td>
-<td align="right">2</td>
-</tr>
-<tr class="odd">
-<td>Merc 230</td>
-<td align="right">22.8</td>
-<td align="right">4</td>
-<td align="right">140.8</td>
-<td align="right">95</td>
-<td align="right">3.92</td>
-<td align="right">3.150</td>
-<td align="right">22.90</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">4</td>
-<td align="right">2</td>
-</tr>
-<tr class="even">
-<td>Merc 280</td>
-<td align="right">19.2</td>
-<td align="right">6</td>
-<td align="right">167.6</td>
-<td align="right">123</td>
-<td align="right">3.92</td>
-<td align="right">3.440</td>
-<td align="right">18.30</td>
-<td align="right">1</td>
-<td align="right">0</td>
-<td align="right">4</td>
-<td align="right">4</td>
-</tr>
-</tbody>
-</table>
-<p>Also a quote using <code>&gt;</code>:</p>
-<blockquote>
-<p>“He who gives up [code] safety for [code] speed deserves neither.” (<a href="https://twitter.com/hadleywickham/status/504368538874703872">via</a>)</p>
-</blockquote>
+<a href="#contact-details" class="anchor"></a>Contact details:</h2>
+<p>Associate Professor Adam H. Sparks, University of Southern Queensland (USQ)</p>
+<ul>
+<li><p><a href="mailto::adam.sparks@usq.edu.au">adam.sparks@usq.edu.au</a></p></li>
+<li><p><a href="https://orcid.org/0000-0002-0061-8359">orcid.org/0000-0002-0061-8359</a></p></li>
+</ul>
+<p>Dr. Ricardo Oliva, International Rice Research Institute (IRRI)</p>
 </div>
-<div class="footnotes">
-<hr>
-<ol>
-<li id="fn1"><p>A footnote here.<a href="#fnref1">↩</a></p></li>
-</ol>
 </div>
 </div>
   </div>
@@ -285,10 +115,14 @@
       <h2 class="hasAnchor">
 <a href="#tocnav" class="anchor"></a>Contents</h2>
       <ul class="nav nav-pills nav-stacked">
-<li><a href="#vignette-info">Vignette Info</a></li>
-      <li><a href="#styles">Styles</a></li>
-      <li><a href="#figures">Figures</a></li>
-      <li><a href="#more-examples">More Examples</a></li>
+<li>
+<a href="#druid-an-informed-decision-platform-to-reduce-the-risk-of-rice-diseases">DRuID: An informed-Decision platform to reduce the risk of RIce Diseases</a><ul class="nav nav-pills nav-stacked">
+<li><a href="#description">Description</a></li>
+      <li><a href="#the-need">The need</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#contact-details">Contact details:</a></li>
+      </ul>
+</li>
       </ul>
 </div>
       </div>
