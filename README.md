@@ -35,7 +35,11 @@ Associate Professor Adam H. Sparks, University of Southern Queensland (USQ)
   - [adam.sparks@usq.edu.au](mailto::adam.sparks@usq.edu.au)
   
   - [orcid.org/0000-0002-0061-8359](https://orcid.org/0000-0002-0061-8359)
+  
+  - <https://adamhsparks.github.io/>
 
 Dr. Ricardo Oliva, International Rice Research Institute (IRRI)
   
   - [r.oliva@irri.org](mailto::r.oliva@irri.org)
+  
+  - <http://irri.org/about-us/our-people/specialists/ricardo-oliva>
