@@ -3,7 +3,7 @@ Title: An informed-decision platform to reduce the risk of rice diseases
 Version: 0.0.0.9000
 Authors@R: c(person("Adam", "Sparks", role = c("aut", "cre"),
     email = "adamhsparks@gmail.com",
-    comment = "https://orcid.org/0000-0002-0061-8359"),
+    comment = c(ORCID = "0000-0002-0061-8359")),
     person("Thea", "Coronejo", role = "aut",
     email = "sapphire.coronejo@gmail.com"),
     person("Ricardo", "Oliva", role = "ctb",
